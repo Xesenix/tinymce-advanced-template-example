@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Simple exmaple of advanced templates</title>
+
+	<script type='text/javascript' src="js/tinymce/tinymce.min.js"></script>
+
+	<script type='text/javascript'>//<![CDATA[ 
+	window.onload=function(){
+	tinymce.init({
+		selector: "textarea",
+		plugins: [
+			"template"
+		],
+		toolbar: "template",
+		templates : [
+			{
+				title: "Template with params",
+				url: "templates/ajax.php",
+				description: "Template loaded via ajax with some additional arguments.",
+				options: {
+					title: { type: 'textbox', label: 'document name', value: 'Passport' },
+					name: { type: 'textbox', label: 'name', value: 'whats your name?' },
+					age: { type: 'textbox', label: 'age', value: '21' }
+				}
+			},
+			{
+				title: "Template without params",
+				url: "templates/static.html",
+				description: "Just some static content."
+			}
+		]
+	});
+	}//]]>  
+
+	</script>
+</head>
+<body>
+	<form method="post" action="dump.php">
+	<textarea name="content"></textarea>
+	</form>
+</body>
+</html>
+
