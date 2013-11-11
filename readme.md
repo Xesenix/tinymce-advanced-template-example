@@ -1,4 +1,4 @@
-tinymce-advanced-template-example
+TinyMCE advanced template example
 =================================
 
 ![alt Advanced template editor](/images/screen00.png "Advanced template editor")
@@ -31,3 +31,5 @@ Simple example of using template with arguments passed to server.
 Options are objects that are passed to:
 
 	tinymce.ui.Factory.create(option)
+
+So anything you working with ui factory will work here also options keys are names of arguments passed to url.
