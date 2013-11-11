@@ -1,6 +1,8 @@
 tinymce-advanced-template-example
 =================================
 
+![alt Advanced template editor](/images/screen00.png "Advanced template editor")
+
 Simple example of using template with arguments passed to server.
 
 	tinymce.init({
