@@ -156,7 +156,7 @@ tinymce.PluginManager.add('template', function(editor) {
 			templateParamsPopupControl = tinymce.ui.Factory.create({
 				type: 'button',
 				icon: 'template',
-				text: 'parametry',
+				text: 'setup',
 				onclick: self.showParamsSetup
 			});
 			
