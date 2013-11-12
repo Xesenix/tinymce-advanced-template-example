@@ -5,6 +5,8 @@ TinyMCE advanced template example
 
 Simple example of using template with arguments passed to server.
 
+If you add options parameter to template configuration setup button will appear for that template.
+
 	tinymce.init({
 		selector: "textarea",
 		plugins: ["template"],
@@ -14,6 +16,7 @@ Simple example of using template with arguments passed to server.
 				title: "Template with params",
 				url: "templates/ajax.php",
 				description: "Template loaded via ajax with some additional arguments.",
+				// if this options exist the button will appear
 				options: {
 					title: { type: 'textbox', label: 'document name', value: 'Passport' },
 					name: { type: 'textbox', label: 'name', value: 'whats your name?' },
