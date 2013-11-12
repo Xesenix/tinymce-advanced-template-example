@@ -5,6 +5,8 @@ TinyMCE advanced template example
 
 Simple example of using template with arguments passed to server.
 
+Original change made in fork to tinymce: https://github.com/Xesenix/tinymce
+
 If you add options parameter to template configuration setup button will appear for that template.
 
 	tinymce.init({
